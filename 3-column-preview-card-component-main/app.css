@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --back-head-btn: hsl(0, 0%, 95%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+/*
+font-family: 'Lexend Deca', sans-serif; 400
+font-family: 'Big Shoulders Display', cursive;700
+*/
+
+body {
+    font-size: 15px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 120px auto;
+    display: flex;
+}
+
+.logo-card {
+    margin: 30px;
+}
+
+.title-card {
+    margin: 0 30px 30px; 
+    color: var(--back-head-btn);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.description-card {
+    color: var(--paragraphs);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 600;
+    margin: 0 50px 30px 30px;
+}
+
+.btn-card {
+    text-transform: capitalize;
+    border: none;
+    background-color: var(--back-head-btn);
+    margin: 30px 0 30px 30px;
+    padding: 16px 35px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
+    transition: 0.7s;
+}
+
+.card-1 {
+   background-color: var(--bright-orange);
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+} .card-1 .btn-card {
+    color: var(--bright-orange);
+}
+
+.card-2 {
+    background-color: var(--dark-cyan);
+} .card-2 .btn-card {
+    color: var(--dark-cyan);
+}
+
+.card-3 {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+} .card-3 .btn-card {
+    color: var(--very-dark-cyan);
+}
+
+.btn-card:hover {
+    background-color: transparent;
+    color: var(--back-head-btn);
+    border: 2px solid var(--back-head-btn);
+}
